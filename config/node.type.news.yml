@@ -1,0 +1,11 @@
+uuid: 86da7728-d30a-4f00-89cd-84a4cadff062
+langcode: en
+status: true
+dependencies: {  }
+name: News
+type: news
+description: 'Add a news item.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

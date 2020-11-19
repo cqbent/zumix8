@@ -1,0 +1,28 @@
+uuid: 6975eb66-caf7-4beb-b1f6-9b93886b5715
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.background_image
+  module:
+    - block_class
+    - views
+  theme:
+    - zumix_theme
+third_party_settings:
+  block_class:
+    classes: background-image
+id: views_block__background_image_block_2
+theme: zumix_theme
+region: footer_bottom
+weight: -12
+provider: null
+plugin: 'views_block:background_image-block_2'
+settings:
+  id: 'views_block:background_image-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

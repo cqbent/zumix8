@@ -1,0 +1,21 @@
+uuid: 5dd55594-f230-4e4f-bc2b-414c50e98360
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_placement
+    - node.type.background_image
+  module:
+    - options
+id: node.background_image.field_image_placement
+field_name: field_image_placement
+entity_type: node
+bundle: background_image
+label: 'Image Placement'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

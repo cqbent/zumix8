@@ -1,0 +1,22 @@
+uuid: 480aabdc-442f-400e-a423-031040642ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.program_index
+id: node.program_index.status
+field_name: status
+entity_type: node
+bundle: program_index
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,15 @@
+uuid: cd6bde15-846d-48c4-b75f-049b05beafa3
+langcode: en
+status: true
+dependencies: {  }
+name: event_thumbnail
+label: event_thumbnail
+effects:
+  c1676df4-d7a5-4361-a92f-78f1a75542f0:
+    uuid: c1676df4-d7a5-4361-a92f-78f1a75542f0
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 170
+      height: 180
+      anchor: center-center

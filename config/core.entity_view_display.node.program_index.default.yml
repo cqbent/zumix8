@@ -1,0 +1,46 @@
+uuid: cf37e02e-6063-4637-9a55-f6e71cdb14da
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_program_index.default
+    - field.field.node.program_index.body
+    - field.field.node.program_index.comment_node_program_index
+    - field.field.node.program_index.field_program_teaser
+    - field.field.node.program_index.field_programimage
+    - field.field.node.program_index.field_sub_title
+    - node.type.program_index
+  module:
+    - comment
+    - text
+    - user
+id: node.program_index.default
+targetEntityType: node
+bundle: program_index
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_program_index:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_program_teaser: true
+  field_programimage: true
+  field_sub_title: true

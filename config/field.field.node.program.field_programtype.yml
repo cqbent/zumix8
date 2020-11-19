@@ -1,0 +1,21 @@
+uuid: 963bd31e-f64b-49b6-9e2b-2971485eb8d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programtype
+    - node.type.program
+id: node.program.field_programtype
+field_name: field_programtype
+entity_type: node
+bundle: program
+label: 'Type of program'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

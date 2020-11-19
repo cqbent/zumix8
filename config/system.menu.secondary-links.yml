@@ -1,0 +1,8 @@
+uuid: 9babdf9f-6433-4aee-8c7a-53b7d505f06b
+langcode: en
+status: true
+dependencies: {  }
+id: secondary-links
+label: 'Secondary links'
+description: 'Secondary links are often used for pages like legal notices, contact details, and other secondary navigation items that play a lesser role than primary links'
+locked: false

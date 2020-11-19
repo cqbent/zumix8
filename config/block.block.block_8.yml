@@ -1,0 +1,30 @@
+uuid: 7dac0b67-e9a9-4457-8cd1-846e2e065719
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e49c7240-1280-48b5-a4fd-68581d3015fb'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: block_8
+theme: bartik
+region: content
+weight: -15
+provider: null
+plugin: 'block_content:e49c7240-1280-48b5-a4fd-68581d3015fb'
+settings:
+  id: 'block_content:e49c7240-1280-48b5-a4fd-68581d3015fb'
+  label: 'Google Calendar'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/community\n/community/events\n/whats-good"

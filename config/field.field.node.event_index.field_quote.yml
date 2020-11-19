@@ -1,0 +1,21 @@
+uuid: 1725afca-c82e-422c-81a7-abd58472e30f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote
+    - node.type.event_index
+  module:
+    - text
+id: node.event_index.field_quote
+field_name: field_quote
+entity_type: node
+bundle: event_index
+label: Quote
+description: 'Add a quote for the event listings page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

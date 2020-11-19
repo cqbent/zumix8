@@ -1,0 +1,15 @@
+uuid: 1cfd2f96-e692-4e19-a7a5-1bddceadcb43
+langcode: en
+status: true
+dependencies: {  }
+id: artistic_staff
+label: 'artistic staff'
+weight: 4
+is_admin: null
+permissions:
+  - 'access anonymous contact form'
+  - 'access ckeditor'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'use text format full_html'
+  - 'view node location table'

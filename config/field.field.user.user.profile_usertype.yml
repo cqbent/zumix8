@@ -1,0 +1,21 @@
+uuid: f0b51a8e-ce7d-4e87-a801-b0a87dc9543d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_usertype
+  module:
+    - options
+    - user
+id: user.user.profile_usertype
+field_name: profile_usertype
+entity_type: user
+bundle: user
+label: 'Type of user'
+description: "<p>Select a role for the user.</p>\r\n"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

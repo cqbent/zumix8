@@ -1,0 +1,48 @@
+uuid: c0b0a5b8-fd01-4f3e-a8e2-d44f61fa0c9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.schedule.body
+    - field.field.node.schedule.comment_node_schedule
+    - field.field.node.schedule.field_scheduled_program
+    - field.field.node.schedule.field_time
+    - node.type.schedule
+  module:
+    - text
+    - user
+id: node.schedule.teaser
+targetEntityType: node
+bundle: schedule
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_scheduled_program:
+    label: above
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_time:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_schedule: true

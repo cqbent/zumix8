@@ -1,0 +1,8 @@
+uuid: 216f56fd-b611-4fa0-9864-0ce485c1ff2c
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_background_image
+label: 'Background Image comment'
+target_entity_type_id: node
+description: null

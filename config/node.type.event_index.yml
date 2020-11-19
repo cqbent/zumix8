@@ -1,0 +1,11 @@
+uuid: 25600ae1-d41c-42bd-a80d-5545bda5abbb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event index page'
+type: event_index
+description: 'Create a page showing listings of a particular type of event.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

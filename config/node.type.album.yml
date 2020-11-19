@@ -1,0 +1,11 @@
+uuid: badad089-7eb6-4c53-af63-7a4c9173de20
+langcode: en
+status: true
+dependencies: {  }
+name: Album
+type: album
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

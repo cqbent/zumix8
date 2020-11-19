@@ -1,0 +1,11 @@
+uuid: 55636563-1c72-4085-ac02-0d686574b414
+langcode: en
+status: true
+dependencies: {  }
+name: 'Background Image'
+type: background_image
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

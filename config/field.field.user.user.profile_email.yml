@@ -1,0 +1,21 @@
+uuid: 11a00788-637d-40ec-b428-f40fecf1c924
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_email
+  module:
+    - text
+    - user
+id: user.user.profile_email
+field_name: profile_email
+entity_type: user
+bundle: user
+label: 'Public e-mail address'
+description: 'Can be different from the address we use to send mail to the user.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,11 @@
+uuid: d7f2a6ad-7ff0-43af-b0de-ef2bf6af3b59
+langcode: en
+status: true
+dependencies: {  }
+name: Schedule
+type: schedule
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,76 @@
+uuid: a793cc1c-d1bd-4104-a9ad-2f6de74345a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.profile_bio
+    - field.field.user.user.profile_email
+    - field.field.user.user.profile_firstname
+    - field.field.user.user.profile_lastname
+    - field.field.user.user.profile_listtop
+    - field.field.user.user.profile_phonenumber
+    - field.field.user.user.profile_usertitle
+    - field.field.user.user.profile_usertype
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  profile_bio:
+    type: text_default
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  profile_email:
+    type: text_default
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  profile_firstname:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  profile_lastname:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  profile_usertitle:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  member_for: true
+  profile_listtop: true
+  profile_phonenumber: true
+  profile_usertype: true

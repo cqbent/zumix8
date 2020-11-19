@@ -1,0 +1,21 @@
+uuid: c19ae0ed-6623-4e27-bf6b-e695daa576a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_album_video
+    - node.type.album
+  module:
+    - text
+id: node.album.field_album_video
+field_name: field_album_video
+entity_type: node
+bundle: album
+label: 'Album Video'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,38 @@
+uuid: c2f9a968-fc67-4819-896a-fbb4722472a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programimage
+    - node.type.program_index
+  module:
+    - image
+id: node.program_index.field_programimage
+field_name: field_programimage
+entity_type: node
+bundle: program_index
+label: Image
+description: 'Add an image for the top of the listing page.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  file_directory: programs
+  max_filesize: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

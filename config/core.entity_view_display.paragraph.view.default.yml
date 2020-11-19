@@ -1,0 +1,24 @@
+uuid: c2209dc7-4504-4e50-8475-0f9d020ca307
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view.field_view_field
+    - paragraphs.paragraphs_type.view
+  module:
+    - viewsreference
+id: paragraph.view.default
+targetEntityType: paragraph
+bundle: view
+mode: default
+content:
+  field_view_field:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

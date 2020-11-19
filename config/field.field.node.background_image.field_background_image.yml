@@ -1,0 +1,38 @@
+uuid: b97d9991-d505-4e8c-bc67-19514013e735
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_image
+    - node.type.background_image
+  module:
+    - image
+id: node.background_image.field_background_image
+field_name: field_background_image
+entity_type: node
+bundle: background_image
+label: 'Background Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  file_directory: ''
+  max_filesize: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

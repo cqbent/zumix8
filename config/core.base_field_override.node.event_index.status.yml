@@ -1,0 +1,22 @@
+uuid: a8e19d04-0322-4ee9-9fb3-30420b14aa35
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event_index
+id: node.event_index.status
+field_name: status
+entity_type: node
+bundle: event_index
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

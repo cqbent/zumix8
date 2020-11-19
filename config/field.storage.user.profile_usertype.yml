@@ -1,0 +1,39 @@
+uuid: 8ef0e68a-7ff9-444c-b924-44bf20aaf563
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.profile_usertype
+field_name: profile_usertype
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Administrative Staff'
+      label: 'Administrative Staff'
+    -
+      value: 'Artistic Staff'
+      label: 'Artistic Staff'
+    -
+      value: Instructor
+      label: Instructor
+    -
+      value: 'Board of Directors'
+      label: 'Board of Directors'
+    -
+      value: ''
+      label: ''
+    -
+      value: '0'
+      label: '0'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

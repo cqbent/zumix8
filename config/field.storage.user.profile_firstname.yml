@@ -1,0 +1,20 @@
+uuid: 2cb03310-7522-4ac0-85da-69f0b15827fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.profile_firstname
+field_name: profile_firstname
+entity_type: user
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

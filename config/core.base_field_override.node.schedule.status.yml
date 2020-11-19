@@ -1,0 +1,22 @@
+uuid: b41a2a22-e2e6-465e-9ec0-1c826459b806
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.schedule
+id: node.schedule.status
+field_name: status
+entity_type: node
+bundle: schedule
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

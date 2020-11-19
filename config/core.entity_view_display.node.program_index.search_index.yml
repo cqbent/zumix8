@@ -1,0 +1,52 @@
+uuid: 5a34b41d-e3de-4889-8308-763705d5d05d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.program_index.body
+    - field.field.node.program_index.comment_node_program_index
+    - field.field.node.program_index.field_program_teaser
+    - field.field.node.program_index.field_programimage
+    - field.field.node.program_index.field_sub_title
+    - node.type.program_index
+  module:
+    - image
+    - text
+    - user
+id: node.program_index.search_index
+targetEntityType: node
+bundle: program_index
+mode: search_index
+content:
+  field_program_teaser:
+    label: above
+    weight: -1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_programimage:
+    label: hidden
+    weight: -2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_sub_title:
+    label: hidden
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_program_index: true

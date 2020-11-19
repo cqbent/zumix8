@@ -1,0 +1,51 @@
+uuid: a1d2f889-34d3-449d-9ad0-6f9dfbb4ed74
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event_index.body
+    - field.field.node.event_index.comment_node_event_index
+    - field.field.node.event_index.field_page_image
+    - field.field.node.event_index.field_quote
+    - node.type.event_index
+  module:
+    - image
+    - text
+    - user
+id: node.event_index.teaser
+targetEntityType: node
+bundle: event_index
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_page_image:
+    label: above
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_quote:
+    label: above
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_event_index: true

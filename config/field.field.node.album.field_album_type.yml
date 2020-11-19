@@ -1,0 +1,21 @@
+uuid: 85231fc0-6033-4256-8ce2-09d39b041f83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_album_type
+    - node.type.album
+  module:
+    - options
+id: node.album.field_album_type
+field_name: field_album_type
+entity_type: node
+bundle: album
+label: 'Album Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

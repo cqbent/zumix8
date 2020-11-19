@@ -1,0 +1,21 @@
+uuid: 14591a02-3d7b-4f6c-9513-70b5f5fb6a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_bio
+  module:
+    - text
+    - user
+id: user.user.profile_bio
+field_name: profile_bio
+entity_type: user
+bundle: user
+label: Bio
+description: 'A brief bio of the user.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

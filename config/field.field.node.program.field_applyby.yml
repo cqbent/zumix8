@@ -1,0 +1,21 @@
+uuid: 96259932-0b1e-421a-b0a1-60e716828478
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_applyby
+    - node.type.program
+  module:
+    - datetime
+id: node.program.field_applyby
+field_name: field_applyby
+entity_type: node
+bundle: program
+label: 'Apply-by date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

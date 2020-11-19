@@ -1,0 +1,27 @@
+uuid: 3d2c5ecb-c214-4301-a493-a6f7068d3950
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_schedule
+    - field.field.comment.comment_node_schedule.comment_body
+  module:
+    - text
+id: comment.comment_node_schedule.default
+targetEntityType: comment
+bundle: comment_node_schedule
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

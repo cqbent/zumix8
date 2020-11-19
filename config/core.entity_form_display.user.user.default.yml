@@ -1,0 +1,129 @@
+uuid: 34849630-7269-4231-86d4-91ce0f5216db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.profile_bio
+    - field.field.user.user.profile_email
+    - field.field.user.user.profile_firstname
+    - field.field.user.user.profile_lastname
+    - field.field.user.user.profile_listtop
+    - field.field.user.user.profile_phonenumber
+    - field.field.user.user.profile_usertitle
+    - field.field.user.user.profile_usertype
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - imce
+    - path
+    - text
+    - user
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  google_analytics:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  profile_bio:
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    weight: 34
+    third_party_settings: {  }
+    region: content
+  profile_email:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 36
+    third_party_settings: {  }
+    region: content
+  profile_firstname:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 32
+    third_party_settings: {  }
+    region: content
+  profile_lastname:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 33
+    third_party_settings: {  }
+    region: content
+  profile_listtop:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 39
+    third_party_settings: {  }
+    region: content
+  profile_phonenumber:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 35
+    third_party_settings: {  }
+    region: content
+  profile_usertitle:
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 38
+    third_party_settings: {  }
+    region: content
+  profile_usertype:
+    type: options_select
+    settings: {  }
+    weight: 37
+    third_party_settings: {  }
+    region: content
+  timezone:
+    weight: 6
+    region: content
+  user_picture:
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    type: image_image
+    weight: 31
+    third_party_settings:
+      imce:
+        enabled: true
+    region: content
+hidden: {  }

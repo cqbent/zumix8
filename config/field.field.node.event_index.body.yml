@@ -1,0 +1,23 @@
+uuid: cf6ad387-0f42-4772-ae41-f3caf4850113
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.event_index
+  module:
+    - text
+id: node.event_index.body
+field_name: body
+entity_type: node
+bundle: event_index
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

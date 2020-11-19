@@ -1,0 +1,20 @@
+uuid: 3cdba68d-125a-4e48-b9c7-ad953d0c5042
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_background_image
+field_name: comment_node_background_image
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_background_image
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

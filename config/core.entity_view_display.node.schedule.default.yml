@@ -1,0 +1,56 @@
+uuid: f6c767e4-b810-408f-8d2f-1af41496cc61
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_schedule.default
+    - field.field.node.schedule.body
+    - field.field.node.schedule.comment_node_schedule
+    - field.field.node.schedule.field_scheduled_program
+    - field.field.node.schedule.field_time
+    - node.type.schedule
+  module:
+    - comment
+    - text
+    - user
+id: node.schedule.default
+targetEntityType: node
+bundle: schedule
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_schedule:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_scheduled_program:
+    label: above
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_time:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

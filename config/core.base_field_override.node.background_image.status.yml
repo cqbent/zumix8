@@ -1,0 +1,22 @@
+uuid: 0b9869e3-3874-4226-881c-14b0a910cdca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.background_image
+id: node.background_image.status
+field_name: status
+entity_type: node
+bundle: background_image
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

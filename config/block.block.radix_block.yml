@@ -1,0 +1,30 @@
+uuid: 43839c6e-6f43-44fd-b24a-371547f9230f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1bbcaebb-87fd-4302-aa49-1b34d3067231'
+  module:
+    - block_content
+    - system
+  theme:
+    - radix
+id: radix_block
+theme: radix
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:1bbcaebb-87fd-4302-aa49-1b34d3067231'
+settings:
+  id: 'block_content:1bbcaebb-87fd-4302-aa49-1b34d3067231'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

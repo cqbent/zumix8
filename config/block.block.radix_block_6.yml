@@ -1,0 +1,30 @@
+uuid: 4b455a44-8083-4697-bab4-cd43f3d5d8f6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4de6f7b8-f8db-4747-835d-6766ded14708'
+  module:
+    - block_content
+    - system
+  theme:
+    - radix
+id: radix_block_6
+theme: radix
+region: content
+weight: -24
+provider: null
+plugin: 'block_content:4de6f7b8-f8db-4747-835d-6766ded14708'
+settings:
+  id: 'block_content:4de6f7b8-f8db-4747-835d-6766ded14708'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/programs\n/programs/zumix-radio"

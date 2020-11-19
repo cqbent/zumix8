@@ -1,0 +1,25 @@
+uuid: 160c0261-db6f-46e7-8401-556c5389c9e1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:42032833-532d-4a6f-b69f-00be96c964f3'
+  module:
+    - block_content
+  theme:
+    - zumix_theme
+id: zumix_theme_block_4
+theme: zumix_theme
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:42032833-532d-4a6f-b69f-00be96c964f3'
+settings:
+  id: 'block_content:42032833-532d-4a6f-b69f-00be96c964f3'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

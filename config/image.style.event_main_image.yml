@@ -1,0 +1,14 @@
+uuid: 6b28fcc5-6cc2-48dc-ba58-efb5506ef94d
+langcode: en
+status: true
+dependencies: {  }
+name: event_main_image
+label: event_main_image
+effects:
+  a2a3e123-0a96-4760-b2ac-ed3fd16b8a73:
+    uuid: a2a3e123-0a96-4760-b2ac-ed3fd16b8a73
+    id: image_resize
+    weight: 0
+    data:
+      width: 690
+      height: 300

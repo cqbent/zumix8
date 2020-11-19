@@ -1,0 +1,21 @@
+uuid: 625ce226-5269-4112-8f2a-a38ab539270e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_usertitle
+  module:
+    - text
+    - user
+id: user.user.profile_usertitle
+field_name: profile_usertitle
+entity_type: user
+bundle: user
+label: 'User Title'
+description: 'The user''s title.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

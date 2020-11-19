@@ -1,0 +1,31 @@
+uuid: c7af90ec-b3d1-4ed8-808f-0b2b2d4e7e01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_views_content
+    - node.type.page
+    - paragraphs.paragraphs_type.view
+  module:
+    - entity_reference_revisions
+id: node.page.field_page_views_content
+field_name: field_page_views_content
+entity_type: node
+bundle: page
+label: 'Page Views Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      view: view
+    target_bundles_drag_drop:
+      view:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

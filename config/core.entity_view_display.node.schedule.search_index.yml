@@ -1,0 +1,41 @@
+uuid: 8b99a7e4-dc0e-4d41-bf33-6642576e9e68
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.schedule.body
+    - field.field.node.schedule.comment_node_schedule
+    - field.field.node.schedule.field_scheduled_program
+    - field.field.node.schedule.field_time
+    - node.type.schedule
+  module:
+    - text
+    - user
+id: node.schedule.search_index
+targetEntityType: node
+bundle: schedule
+mode: search_index
+content:
+  field_scheduled_program:
+    label: above
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_time:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_schedule: true

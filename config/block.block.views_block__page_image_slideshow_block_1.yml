@@ -1,0 +1,25 @@
+uuid: c1eda5a2-c514-44fd-ad56-6aa36bb7b85c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.page_image_slideshow
+  module:
+    - views
+  theme:
+    - zumix_theme
+id: views_block__page_image_slideshow_block_1
+theme: zumix_theme
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:page_image_slideshow-block_1'
+settings:
+  id: 'views_block:page_image_slideshow-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

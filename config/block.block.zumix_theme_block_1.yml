@@ -1,0 +1,29 @@
+uuid: 6c4ecf14-c130-4bf0-8903-78c2f05aafcc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7d6be37c-a8cb-4b90-a099-0bf4e5b9c2da'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - zumix_theme
+third_party_settings:
+  block_class:
+    classes: zumix-footer
+id: zumix_theme_block_1
+theme: zumix_theme
+region: footer
+weight: -11
+provider: null
+plugin: 'block_content:7d6be37c-a8cb-4b90-a099-0bf4e5b9c2da'
+settings:
+  id: 'block_content:7d6be37c-a8cb-4b90-a099-0bf4e5b9c2da'
+  label: zumix_footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,100 @@
+uuid: b4932aa0-0e8e-4fc9-890d-1a25d89754a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.profile_bio
+    - field.field.user.user.profile_email
+    - field.field.user.user.profile_firstname
+    - field.field.user.user.profile_lastname
+    - field.field.user.user.profile_listtop
+    - field.field.user.user.profile_phonenumber
+    - field.field.user.user.profile_usertitle
+    - field.field.user.user.profile_usertype
+    - field.field.user.user.user_picture
+  module:
+    - image
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  profile_bio:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 9
+    third_party_settings: {  }
+    region: content
+  profile_email:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 11
+    third_party_settings: {  }
+    region: content
+  profile_firstname:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 7
+    third_party_settings: {  }
+    region: content
+  profile_lastname:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 8
+    third_party_settings: {  }
+    region: content
+  profile_listtop:
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    type: boolean
+    weight: 14
+    third_party_settings: {  }
+    region: content
+  profile_phonenumber:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 10
+    third_party_settings: {  }
+    region: content
+  profile_usertitle:
+    label: hidden
+    settings: {  }
+    type: text_default
+    weight: 13
+    third_party_settings: {  }
+    region: content
+  profile_usertype:
+    label: hidden
+    settings: {  }
+    type: list_default
+    weight: 12
+    third_party_settings: {  }
+    region: content
+  user_picture:
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    type: image
+    weight: 6
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: aa5ffb95-8f42-4ace-a78e-99a20216f145
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_image_placement
+field_name: field_image_placement
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'home page'
+      label: 'home page'
+    -
+      value: 'inside pages'
+      label: 'inside pages'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

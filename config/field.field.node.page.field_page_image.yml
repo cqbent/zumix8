@@ -1,0 +1,38 @@
+uuid: 4f43700c-e5b8-4010-aa7b-aee4d4c01155
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_image
+    - node.type.page
+  module:
+    - image
+id: node.page.field_page_image
+field_name: field_page_image
+entity_type: node
+bundle: page
+label: 'Page Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  file_directory: ''
+  max_filesize: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

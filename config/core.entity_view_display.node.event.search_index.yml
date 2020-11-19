@@ -1,0 +1,99 @@
+uuid: 8857f506-40c4-42dc-b7bd-b7b43ff6f651
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.event.body
+    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_event_logos
+    - field.field.node.event.field_event_series
+    - field.field.node.event.field_eventdate
+    - field.field.node.event.field_page_image
+    - field.field.node.event.field_show_detail
+    - field.field.node.event.field_thumbnailimage
+    - field.field.node.event.field_ticket_price
+    - field.field.node.event.field_web_site
+    - node.type.event
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.event.search_index
+targetEntityType: node
+bundle: event
+mode: search_index
+content:
+  field_event_logos:
+    label: hidden
+    weight: 17
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_event_series:
+    label: above
+    weight: 13
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_eventdate:
+    label: above
+    weight: 14
+    type: datetime_default
+    settings:
+      format_type: fallback
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_page_image:
+    label: hidden
+    weight: 8
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_show_detail:
+    label: above
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_thumbnailimage:
+    label: hidden
+    weight: 9
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_ticket_price:
+    label: above
+    weight: 16
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_web_site:
+    label: above
+    weight: 11
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_event: true

@@ -1,0 +1,22 @@
+uuid: de7e741d-0737-4d9a-bfb2-de80056c08f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event_index
+id: node.event_index.sticky
+field_name: sticky
+entity_type: node
+bundle: event_index
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

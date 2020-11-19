@@ -1,0 +1,21 @@
+uuid: 647e56a7-7676-4df1-acd2-19e2e0c2f88c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_site
+    - node.type.event
+  module:
+    - text
+id: node.event.field_web_site
+field_name: field_web_site
+entity_type: node
+bundle: event
+label: 'Event Web site'
+description: 'Type or paste the artist''s Web URL, for example: www.artist.com'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

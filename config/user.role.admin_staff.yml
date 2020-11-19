@@ -1,0 +1,17 @@
+uuid: 6d52a78d-cf3e-4b34-bd5f-297a88d7ed10
+langcode: en
+status: true
+dependencies: {  }
+id: admin_staff
+label: 'admin staff'
+weight: 3
+is_admin: null
+permissions:
+  - 'access anonymous contact form'
+  - 'access ckeditor'
+  - 'access news feeds'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'administer news feeds'
+  - 'use text format full_html'
+  - 'view node location table'

@@ -1,0 +1,21 @@
+uuid: 9d28e129-7270-49a1-ab39-eed02d1b026e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_detail
+    - node.type.event
+id: node.event.field_show_detail
+field_name: field_show_detail
+entity_type: node
+bundle: event
+label: 'Show Detail'
+description: 'Click this checkbox if you want to allow users to view the event details on a separate page'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,15 @@
+uuid: 1f296ec7-0161-45ad-ac41-730218c4e012
+langcode: en
+status: true
+dependencies: {  }
+id: instructor
+label: instructor
+weight: 5
+is_admin: null
+permissions:
+  - 'access anonymous contact form'
+  - 'access ckeditor'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'use text format full_html'
+  - 'view node location table'

@@ -1,0 +1,41 @@
+uuid: ac4c28e6-5f79-4615-ad12-394e5d33eb2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.schedule.body
+    - field.field.node.schedule.comment_node_schedule
+    - field.field.node.schedule.field_scheduled_program
+    - field.field.node.schedule.field_time
+    - node.type.schedule
+  module:
+    - text
+    - user
+id: node.schedule.rss
+targetEntityType: node
+bundle: schedule
+mode: rss
+content:
+  field_scheduled_program:
+    label: above
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_time:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_schedule: true

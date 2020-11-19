@@ -1,0 +1,19 @@
+uuid: bfa7822d-b11c-4ce2-ae51-74837a974a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datetimex
+    - node.type.program
+id: node.program.field_datetimex
+field_name: field_datetimex
+entity_type: node
+bundle: program
+label: 'Date and Time'
+description: 'Enter the dates and times for the program, for example: <strong>Wednesdays, 6-8 p.m., July 4 - July 28.</strong>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

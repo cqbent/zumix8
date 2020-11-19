@@ -1,0 +1,15 @@
+uuid: c3496142-7f13-43b4-b271-7a539a0e66c1
+langcode: en
+status: true
+dependencies: {  }
+name: album_thumbnail
+label: album_thumbnail
+effects:
+  594980ac-2e24-48ae-880c-8cb317332983:
+    uuid: 594980ac-2e24-48ae-880c-8cb317332983
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 121
+      height: 80
+      anchor: center-center

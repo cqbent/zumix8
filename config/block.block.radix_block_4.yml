@@ -1,0 +1,25 @@
+uuid: d765bd58-66fd-4a57-ae1b-b77895ca5f77
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:42032833-532d-4a6f-b69f-00be96c964f3'
+  module:
+    - block_content
+  theme:
+    - radix
+id: radix_block_4
+theme: radix
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:42032833-532d-4a6f-b69f-00be96c964f3'
+settings:
+  id: 'block_content:42032833-532d-4a6f-b69f-00be96c964f3'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

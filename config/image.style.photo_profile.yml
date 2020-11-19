@@ -1,0 +1,14 @@
+uuid: 6c4bd48e-8370-463f-8f38-1720bbce23a0
+langcode: en
+status: true
+dependencies: {  }
+name: photo_profile
+label: photo_profile
+effects:
+  1afb725d-86eb-46cd-aae4-943adcecb824:
+    uuid: 1afb725d-86eb-46cd-aae4-943adcecb824
+    id: image_resize
+    weight: 0
+    data:
+      width: 210
+      height: 246

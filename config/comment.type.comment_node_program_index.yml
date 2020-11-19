@@ -1,0 +1,8 @@
+uuid: 6764ef79-c3ca-42d1-afbd-065385611c11
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_program_index
+label: 'Program index page comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,38 @@
+uuid: 916fe8da-a7e3-43f2-83a9-78e9ab5a5861
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thumbnailimage
+    - node.type.event
+  module:
+    - image
+id: node.event.field_thumbnailimage
+field_name: field_thumbnailimage
+entity_type: node
+bundle: event
+label: 'Thumbnail image'
+description: 'A small image to go on the events listings page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  file_directory: ''
+  max_filesize: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  max_resolution: 270x290
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

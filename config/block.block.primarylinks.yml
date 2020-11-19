@@ -1,0 +1,29 @@
+uuid: c279b127-ae0d-4975-b354-23a95322d78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.primary-links
+  module:
+    - menu_block
+  theme:
+    - zumix_theme
+id: primarylinks
+theme: zumix_theme
+region: navbar_left
+weight: -11
+provider: null
+plugin: 'menu_block:primary-links'
+settings:
+  id: 'menu_block:primary-links'
+  label: 'Primary links'
+  provider: menu_block
+  label_display: '0'
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand: false
+  parent: 'primary-links:'
+  suggestion: primary_links
+visibility: {  }

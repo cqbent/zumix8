@@ -1,0 +1,22 @@
+uuid: 7d8189d4-93cf-4c83-9c10-d29379ef7283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_listtop
+  module:
+    - user
+id: user.user.profile_listtop
+field_name: profile_listtop
+entity_type: user
+bundle: user
+label: 'Top of the list'
+description: 'Should this user be at the top of lists? For example: A program director or chairman of the board. If so, check this box.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

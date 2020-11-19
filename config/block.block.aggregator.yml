@@ -1,0 +1,26 @@
+uuid: 25162ed6-271c-4811-a83b-864d738d03f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: aggregator
+theme: bartik
+region: content
+weight: -14
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+  block_count: '5'
+  feed: '1'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/14

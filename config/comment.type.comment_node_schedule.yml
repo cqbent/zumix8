@@ -1,0 +1,8 @@
+uuid: 67f6fde9-641b-46b5-8760-936f36639245
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_schedule
+label: 'Schedule comment'
+target_entity_type_id: node
+description: null

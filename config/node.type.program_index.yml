@@ -1,0 +1,11 @@
+uuid: 708e04e0-a323-484e-8f4a-72527ad1a223
+langcode: en
+status: true
+dependencies: {  }
+name: 'Program index page'
+type: program_index
+description: 'Create a page listing programs of a particular type (for example: Instrumental).'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

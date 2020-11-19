@@ -1,0 +1,14 @@
+uuid: 7e75d311-6223-408a-a106-115a6f4977ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.artistic_staff
+  module:
+    - user
+id: user_add_role_action.artistic_staff
+label: 'Add the artistic staff role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: artistic_staff

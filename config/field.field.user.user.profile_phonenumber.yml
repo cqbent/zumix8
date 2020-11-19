@@ -1,0 +1,21 @@
+uuid: fa58212c-f1a8-4766-9bab-60f84960bb63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_phonenumber
+  module:
+    - text
+    - user
+id: user.user.profile_phonenumber
+field_name: profile_phonenumber
+entity_type: user
+bundle: user
+label: 'Phone Number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

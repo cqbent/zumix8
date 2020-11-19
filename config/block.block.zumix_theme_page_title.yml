@@ -1,0 +1,25 @@
+uuid: a20435b0-0419-4205-9d6a-6918e1d5ab0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - zumix_theme
+third_party_settings:
+  block_class:
+    classes: page-title
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: zumix_theme_page_title
+theme: zumix_theme
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

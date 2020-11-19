@@ -1,0 +1,26 @@
+uuid: 986d209d-6216-4c9c-8353-e4c7b4714931
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radix
+id: radix_aggregator
+theme: radix
+region: content
+weight: -14
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+  block_count: '5'
+  feed: '1'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/14

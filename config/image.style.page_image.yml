@@ -1,0 +1,15 @@
+uuid: a85e76ef-60a3-4d90-ba3f-5394395d1da8
+langcode: en
+status: true
+dependencies: {  }
+name: page_image
+label: page_image
+effects:
+  08a310f7-c28b-4794-a1fe-f49d7848ca4c:
+    uuid: 08a310f7-c28b-4794-a1fe-f49d7848ca4c
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 463
+      height: 309
+      anchor: center-center

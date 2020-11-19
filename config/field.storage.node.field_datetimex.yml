@@ -1,0 +1,19 @@
+uuid: 87643226-a89d-4506-8265-41f47745c13a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_datetimex
+field_name: field_datetimex
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+uuid: 20f7381d-6f80-427b-a2e3-5cf6c4994ff0
+langcode: en
+status: true
+dependencies: {  }
+name: program_thumbnail
+label: program_thumbnail
+effects:
+  fbd2c818-fadc-4ed5-aa2e-d09488acffe3:
+    uuid: fbd2c818-fadc-4ed5-aa2e-d09488acffe3
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 180
+      height: 120
+      anchor: center-center

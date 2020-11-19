@@ -1,0 +1,29 @@
+uuid: bab6abb8-08eb-4765-8f23-c3efb993f4a4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2024ed93-7bb1-4ede-8b54-da9fa6044ef8'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - zumix_theme
+third_party_settings:
+  block_class:
+    classes: spanish-link
+id: zumix_theme_block_5
+theme: zumix_theme
+region: header
+weight: -9
+provider: null
+plugin: 'block_content:2024ed93-7bb1-4ede-8b54-da9fa6044ef8'
+settings:
+  id: 'block_content:2024ed93-7bb1-4ede-8b54-da9fa6044ef8'
+  label: 'spanish link'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

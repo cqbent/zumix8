@@ -1,0 +1,20 @@
+uuid: 1685b15f-b049-4696-8cdc-7c2a688cdf52
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zumix_theme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: zumix_theme_local_actions
+theme: zumix_theme
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 202c4e97-969e-4ba8-8f19-f9ffde4e8ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_event_index
+    - field.field.comment.comment_node_event_index.comment_body
+  module:
+    - text
+id: comment.comment_node_event_index.default
+targetEntityType: comment
+bundle: comment_node_event_index
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

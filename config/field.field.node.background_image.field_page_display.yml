@@ -1,0 +1,21 @@
+uuid: 59634f25-01a9-4f7f-ac8e-0ecd131569bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_display
+    - node.type.background_image
+id: node.background_image.field_page_display
+field_name: field_page_display
+entity_type: node
+bundle: background_image
+label: 'Page Display'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

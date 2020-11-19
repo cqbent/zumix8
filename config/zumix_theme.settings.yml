@@ -1,0 +1,12 @@
+features:
+  node_user_picture: false
+  comment_user_picture: false
+  comment_user_verification: false
+  favicon: true
+logo:
+  use_default: false
+  path: themes/custom/zumix_theme/assets/images/zumix_logo.png
+favicon:
+  use_default: false
+  path: themes/custom/zumix_theme/assets/images/zumix_favicon.png
+  mimetype: image/png

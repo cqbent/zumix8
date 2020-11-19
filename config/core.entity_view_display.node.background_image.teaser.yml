@@ -1,0 +1,51 @@
+uuid: 44a28924-557c-4bb9-a6e9-2da6b137a696
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.background_image.comment_node_background_image
+    - field.field.node.background_image.field_background_image
+    - field.field.node.background_image.field_image_placement
+    - field.field.node.background_image.field_page_display
+    - node.type.background_image
+  module:
+    - image
+    - text
+    - user
+id: node.background_image.teaser
+targetEntityType: node
+bundle: background_image
+mode: teaser
+content:
+  field_background_image:
+    label: above
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_image_placement:
+    label: above
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_page_display:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_background_image: true

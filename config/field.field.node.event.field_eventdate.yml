@@ -1,0 +1,21 @@
+uuid: 2538b059-3ca9-41f1-be9c-52092187842d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eventdate
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_eventdate
+field_name: field_eventdate
+entity_type: node
+bundle: event
+label: 'Date and Time'
+description: 'Add the date and time of the event.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

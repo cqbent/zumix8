@@ -1,0 +1,44 @@
+uuid: a974aac1-b897-4792-b0d7-8f6d640cab11
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_event_index.default
+    - field.field.node.event_index.body
+    - field.field.node.event_index.comment_node_event_index
+    - field.field.node.event_index.field_page_image
+    - field.field.node.event_index.field_quote
+    - node.type.event_index
+  module:
+    - comment
+    - text
+    - user
+id: node.event_index.default
+targetEntityType: node
+bundle: event_index
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_event_index:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_page_image: true
+  field_quote: true

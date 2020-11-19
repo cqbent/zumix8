@@ -1,0 +1,15 @@
+uuid: 97d74c66-1580-4374-921e-28732bf6ecd0
+langcode: en
+status: true
+dependencies: {  }
+name: album_image
+label: album_image
+effects:
+  b219e3c5-c002-45a2-88b6-415b41cf6c80:
+    uuid: b219e3c5-c002-45a2-88b6-415b41cf6c80
+    id: image_scale
+    weight: 0
+    data:
+      width: null
+      height: 500
+      upscale: true

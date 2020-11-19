@@ -1,0 +1,21 @@
+uuid: 4c4f57e7-cfb1-43ea-9e4b-44a290c30454
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote
+    - node.type.page
+  module:
+    - text
+id: node.page.field_quote
+field_name: field_quote
+entity_type: node
+bundle: page
+label: Quote
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

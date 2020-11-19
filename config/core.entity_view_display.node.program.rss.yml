@@ -1,0 +1,70 @@
+uuid: 95c08ac3-fce5-4284-a064-a3eb3db2950b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.program.body
+    - field.field.node.program.comment_node_program
+    - field.field.node.program.field_applyby
+    - field.field.node.program.field_datetimex
+    - field.field.node.program.field_instructor
+    - field.field.node.program.field_more_information
+    - field.field.node.program.field_programtype
+    - node.type.program
+  module:
+    - datetime
+    - text
+    - user
+id: node.program.rss
+targetEntityType: node
+bundle: program
+mode: rss
+content:
+  field_applyby:
+    label: above
+    weight: 1
+    type: datetime_default
+    settings:
+      format_type: fallback
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_datetimex:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_instructor:
+    label: above
+    weight: -2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_more_information:
+    label: above
+    weight: -1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_programtype:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_program: true

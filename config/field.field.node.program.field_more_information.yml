@@ -1,0 +1,21 @@
+uuid: 82bd205a-a880-4f2f-8e7c-d9b962f4f027
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_information
+    - node.type.program
+  module:
+    - text
+id: node.program.field_more_information
+field_name: field_more_information
+entity_type: node
+bundle: program
+label: 'More Information'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

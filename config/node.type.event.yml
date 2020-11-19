@@ -1,0 +1,11 @@
+uuid: 5bb5bf46-562f-4900-8b00-9590967a657d
+langcode: en
+status: true
+dependencies: {  }
+name: Event
+type: event
+description: 'Add an event listing.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
