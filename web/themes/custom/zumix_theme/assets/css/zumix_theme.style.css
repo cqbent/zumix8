@@ -9657,16 +9657,17 @@ main {
   background-color: #ffde00;
   font-size: 1.5rem;
   text-transform: uppercase;
-  background-image: url(../images/down-arrow.png);
-  padding-right: 60px;
   background-position: right top;
   background-repeat: no-repeat;
 }
+@media (min-width: 576px) {
+  .page__content .page-title h1 {
+    background-image: url(../images/down-arrow.png);
+    padding-right: 60px;
+  }
+}
 .page__content .node {
-  font-size: 0.75rem;
   margin-bottom: 20px;
-  background-image: url(../images/zumix-content-bk.png);
-  padding-left: 50px;
 }
 .page__content .node .sub-title {
   background-color: #006e9d;
@@ -9690,6 +9691,13 @@ main {
 }
 .page__content .node h4 {
   font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .page__content .node {
+    background-image: url(../images/zumix-content-bk.png);
+    padding-left: 50px;
+    font-size: 0.75rem;
+  }
 }
 .page__content .body, .page__content .additional {
   padding: 15px;
@@ -9724,10 +9732,10 @@ main {
 .page__content .zumix-quotes {
   background-image: url(../images/zumix-content-bk.png);
   background-repeat: repeat-y;
-  padding: 10px 175px 10px 10px;
+  padding: 10px;
   color: #fff;
   font-family: "proxima-nova-condensed", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 1px;
@@ -9738,6 +9746,12 @@ main {
   font-family: "proxima-nova", sans-serif;
   font-size: 1rem;
   font-weight: 300;
+}
+@media (min-width: 576px) {
+  .page__content .zumix-quotes {
+    padding: 10px 175px 10px 10px;
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 992px) {
   .page__content > .container {
@@ -9794,26 +9808,32 @@ main {
   background-color: #fff;
 }
 .page__content .event-feature {
-  width: 600px;
-  height: 100px;
-  float: right;
   font-family: "proxima-nova", sans-serif;
   font-size: 1.75rem;
   line-height: 1.25;
 }
 .page__content .event-feature .content {
   background-color: #ffde00;
-  height: 100px;
   padding: 10px;
 }
-.page__content .event-feature:before {
-  content: "";
-  display: block;
-  float: right;
-  width: 100px;
-  height: 100px;
-  background-image: url(../images/event-feature-arrow.png);
-  background-size: cover;
+@media (min-width: 576px) {
+  .page__content .event-feature {
+    width: 600px;
+    float: right;
+    height: 100px;
+  }
+  .page__content .event-feature .content {
+    height: 100px;
+  }
+  .page__content .event-feature:before {
+    content: "";
+    display: block;
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/event-feature-arrow.png);
+    background-size: cover;
+  }
 }
 .home .page__content .container {
   padding-left: 0;
@@ -9844,8 +9864,7 @@ main {
   background-image: url(../images/footer-bk.png);
 }
 .page__footer .container .zumix-footer .copyright, .page__footer .container .zumix-footer .social-links, .page__footer .container .zumix-footer .donate {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 10px;
 }
 .page__footer .container .zumix-footer .copyright {
   font-size: 0.75rem;

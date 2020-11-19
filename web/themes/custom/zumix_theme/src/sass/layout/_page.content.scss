@@ -16,18 +16,17 @@ main {
       background-color: $yellow;
       font-size: 1.5rem;
       text-transform: uppercase;
-      background-image: url(../images/down-arrow.png);
-      padding-right: 60px;
       background-position: right top;
       background-repeat: no-repeat;
+      @include media-breakpoint-up(sm) {
+        background-image: url(../images/down-arrow.png);
+        padding-right: 60px;
+      }
     }
   }
   .node {
-    font-size: .75rem;
     margin-bottom: 20px;
     //background-color: $white;
-    background-image: url(../images/zumix-content-bk.png);
-    padding-left: 50px;
     .sub-title {
       background-color: $blue;
       color: $white;
@@ -50,6 +49,11 @@ main {
     }
     h4 {
       font-size: 1rem;
+    }
+    @include media-breakpoint-up(sm) {
+      background-image: url(../images/zumix-content-bk.png);
+      padding-left: 50px;
+      font-size: .75rem;
     }
   }
   .body, .additional {
@@ -90,10 +94,10 @@ main {
   .zumix-quotes {
     background-image: url(../images/zumix-content-bk.png);
     background-repeat: repeat-y;
-    padding: 10px 175px 10px 10px;
+    padding: 10px;
     color: $white;
     font-family: $proxima-nova-condensed;
-    font-size: 1.5em;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 1px;
@@ -103,6 +107,10 @@ main {
       font-family: $proxima-nova;
       font-size: 1rem;
       font-weight: 300;
+    }
+    @include media-breakpoint-up(sm) {
+      padding: 10px 175px 10px 10px;
+      font-size: 1.5rem;
     }
   }
   @include media-breakpoint-up(lg) {
@@ -170,25 +178,29 @@ main {
   }
   // event feature block for home page
   .event-feature {
-    width: 600px;
-    height: 100px;
-    float: right;
     font-family: $proxima-nova;
     font-size: 1.75rem;
     line-height: 1.25;
     .content {
       background-color: $yellow;
-      height: 100px;
       padding: 10px;
     }
-    &:before {
-      content: "";
-      display: block;
+    @include media-breakpoint-up(sm) {
+      width: 600px;
       float: right;
-      width: 100px;
       height: 100px;
-      background-image: url(../images/event-feature-arrow.png);
-      background-size: cover;
+      .content {
+        height: 100px;
+      }
+      &:before {
+        content: "";
+        display: block;
+        float: right;
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/event-feature-arrow.png);
+        background-size: cover;
+      }
     }
   }
 
