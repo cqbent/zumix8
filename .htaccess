@@ -1,0 +1,4 @@
+RewriteEngine on
+
+# Redirect to the subdirectory because that's where Drupal is installed
+RewriteRule (.*) web/$1 [L]

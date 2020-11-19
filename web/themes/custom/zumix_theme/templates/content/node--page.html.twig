@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Template for a Node component.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  'row',
+  'no-gutters',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+<article{{ attributes.addClass(classes) }}>
+
+  {% block content %}
+    <div class="sub-title col-12">
+      {{ content.field_sub_title }}
+    </div>
+    {% if content.field_additional_content.0 %}
+      <div class="col-sm-8 body">
+        {{ content|without('field_sub_title','field_additional_content') }}
+      </div>
+      <div class="col-sm-4 additional">
+        {{ content.field_additional_content }}
+      </div>
+    {% else %}
+      <div class="col-12 body">
+        {{ content|without('field_sub_title','field_additional_content') }}
+      </div>
+    {% endif %}
+  {% endblock %}
+</article>

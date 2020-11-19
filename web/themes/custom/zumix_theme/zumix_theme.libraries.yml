@@ -1,0 +1,12 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/zumix_theme.style.css: {}
+  js:
+    'https://kit.fontawesome.com/21ef3a18a3.js': { type: external }
+    assets/js/zumix_theme.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

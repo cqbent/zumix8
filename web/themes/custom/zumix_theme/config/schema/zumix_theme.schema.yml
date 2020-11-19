@@ -1,0 +1,5 @@
+# Schema for the configuration files of the zumix theme theme.
+
+zumix_theme.settings:
+  type: theme_settings
+  label: 'zumix theme settings'

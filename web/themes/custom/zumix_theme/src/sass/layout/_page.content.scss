@@ -1,0 +1,210 @@
+// Page: Content
+//
+// -----------------------------------------------------------------------------
+main {
+  position: relative;
+  min-height: 580px;
+}
+.page__content {
+  img {
+    max-width: 100%;
+  }
+  .page-title {
+    h1 {
+      display: inline-block;
+      padding: 7px 20px;
+      background-color: $yellow;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      background-image: url(../images/down-arrow.png);
+      padding-right: 60px;
+      background-position: right top;
+      background-repeat: no-repeat;
+    }
+  }
+  .node {
+    font-size: .75rem;
+    margin-bottom: 20px;
+    //background-color: $white;
+    background-image: url(../images/zumix-content-bk.png);
+    padding-left: 50px;
+    .sub-title {
+      background-color: $blue;
+      color: $white;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 20px;
+    }
+    h2, .viewsreference--view-title {
+      font-family: $proxima-nova;
+      font-size: 1.333rem;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+    .paragraph {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+  }
+  .body, .additional {
+    padding: 15px;
+  }
+  .body {
+    background-color: $gray-300;
+    .body-columns {
+      margin-top: -15px;
+      .item {
+        @extend .row;
+        .left-content, .right-content {
+          @extend .col-sm-6;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px $black solid;
+        }
+        .right-content {
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .additional {
+    background-color: $white;
+  }
+  // page images carousel
+  .page-images-carousel {
+    max-width: 480px;
+    background-image: url(../images/zumix-content-bk.png);
+    padding: 10px;
+    margin-bottom: 30px;
+    .owl-dots {
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+  .zumix-quotes {
+    background-image: url(../images/zumix-content-bk.png);
+    background-repeat: repeat-y;
+    padding: 10px 175px 10px 10px;
+    color: $white;
+    font-family: $proxima-nova-condensed;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    .views-field-field-quote-attribute {
+      margin-top: 10px;
+      font-family: $proxima-nova;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    > .container {
+      padding-left: 220px;
+    }
+  }
+  #support-us {
+    font-size: .7rem;
+    .item {
+      width: 33%;
+      padding-right: 10px;
+      float: left;
+      padding-bottom: 20px;
+    }
+    .desc {
+      span {
+        font-size: 1.4rem;
+        font-family: $proxima-nova-condensed;
+        font-weight: 700;
+      }
+    }
+
+  }
+
+  // staff list
+  .staff-list {
+    .modal {
+      .modal-content {
+        background: none;
+        .modal-header {
+          align-items: end;
+          h2 {
+            color: $yellow;
+            font-size: 2.5rem;
+            margin: 0;
+            line-height: 1;
+          }
+          .close {
+            color: $white;
+            opacity: 1;
+          }
+        }
+        .modal-body {
+          background-color: $white;
+          img {
+            float: left;
+            margin-right: 15px;
+            max-width: 200px;
+          }
+          .job-title {
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .block-bottom {
+    background-image: url(../images/zumix-content-bk.png);
+    padding-left: 50px;
+    .basic__body {
+      background-color: $white;
+    }
+  }
+  // event feature block for home page
+  .event-feature {
+    width: 600px;
+    height: 100px;
+    float: right;
+    font-family: $proxima-nova;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    .content {
+      background-color: $yellow;
+      height: 100px;
+      padding: 10px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      float: right;
+      width: 100px;
+      height: 100px;
+      background-image: url(../images/event-feature-arrow.png);
+      background-size: cover;
+    }
+  }
+
+  // home page syling
+  .home & {
+    .container {
+      padding-left: 0;
+      min-height: 500px;
+      margin-top: 50px;
+    }
+    .zumix-quotes {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+    .node, .page-title {
+      display: none;
+    }
+  }
+}

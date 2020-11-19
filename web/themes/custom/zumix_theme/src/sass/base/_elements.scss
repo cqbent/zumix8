@@ -1,0 +1,133 @@
+// Headings
+// -----------------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-family: $proxima-nova;
+}
+
+// Text
+// -----------------------------------------------------------------------------
+p {
+
+}
+
+// Links
+// -----------------------------------------------------------------------------
+a {
+
+  @include hover {
+
+  }
+}
+
+// Lists
+// -----------------------------------------------------------------------------
+ol,
+ul,
+dl {
+
+}
+
+// Image
+// -----------------------------------------------------------------------------
+img {
+
+}
+
+figure {
+
+}
+
+figcaption {
+
+}
+
+// Other
+// -----------------------------------------------------------------------------
+blockquote {
+
+}
+
+strong {
+
+}
+
+small {
+
+}
+
+// label styling
+.label {
+  font-family: $proxima-nova;
+  color: $green;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: map-get($grid-breakpoints, lg) !important;
+}
+
+
+// background image styling
+.background-image {
+  img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*
+Owl Carousel elements
+ */
+.owl-carousel {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .owl-nav {
+    font-size: 1.5rem;
+    button {
+      margin: 0 15px;
+    }
+  }
+  .owl-dots {
+    .owl-dot {
+      span {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        display: block;
+        -webkit-backface-visibility: visible;
+        transition: opacity .2s ease;
+        border-radius: 0;
+        background: $gray-300;
+      }
+      &.active {
+        span {
+          background: $yellow;
+        }
+      }
+    }
+  }
+}
+
+// action links
+.action-link {
+  a {
+    display: inline-block;
+    font-family: $proxima-nova;
+    font-weight: 300;
+    color: $black;
+    text-transform: uppercase;
+    background-color: $yellow;
+    height: 20px;
+    background-image: url(../images/action-arrow.gif);
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 3px 28px 0 5px;
+    min-width: 148px;
+    line-height: 1;
+  }
+}

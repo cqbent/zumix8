@@ -1,0 +1,72 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="page">
+  {% if page.footer_bottom %}
+    <div class="footer-bottom">
+      {{ page.footer_bottom }}
+    </div>
+  {% endif %}
+  <header class="header">
+    <div class="container">
+      {% embed '@zumix_theme/navbar/navbar.twig' with {
+        placement: '',
+        container: 'fixed',
+        color: 'light',
+        utility_classes: [''],
+      } %}
+
+        {% block branding %}
+          {% if page.navbar_branding %}
+            {{ page.navbar_branding }}
+          {% endif %}
+        {% endblock %}
+
+        {% block left %}
+          {% if page.navbar_left %}
+            <div class="mr-auto">
+              {{ page.navbar_left }}
+            </div>
+          {% endif %}
+        {% endblock %}
+
+        {% block right %}
+          {% if page.navbar_right %}
+            {{ page.navbar_right }}
+          {% endif %}
+        {% endblock %}
+      {% endembed %}
+      {% block head %}
+        {% if page.header %}
+          <div class="page-header">
+            {{ page.header }}
+          </div>
+        {% endif %}
+      {% endblock %}
+    </div>
+  </header>
+  <main>
+    {% if page.content %}
+      <div class="page__content">
+        <div class="container">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endif %}
+  </main>
+
+  {% if page.footer %}
+    <footer class="page__footer">
+      <div class="container">
+        <div class="d-flex justify-content-md-between align-items-md-center">
+          {{ page.footer }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+</div>
+
+
