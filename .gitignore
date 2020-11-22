@@ -56,3 +56,6 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+# ignore add'l files #
+zumix6
