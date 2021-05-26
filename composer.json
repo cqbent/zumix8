@@ -32,7 +32,8 @@
         "drupal/token": "^1.7",
         "drupal/views_bulk_operations": "^3.9",
         "drupal/views_slideshow": "^4.8",
-        "drupal/viewsreference": "^1.6"
+        "drupal/viewsreference": "^1.6",
+        "drush/drush": "~8"
     },
     "conflict": {
         "drupal/drupal": "*"
